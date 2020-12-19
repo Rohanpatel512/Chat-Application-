@@ -1,0 +1,118 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  background-color: skyblue;
+}
+
+.name-container {
+  display: block;
+  background-color: #ededed;
+  border-radius: 5px;
+  width: 300px;
+  height: 110px;
+  margin-left: 40%;
+  margin-top: 5%;
+  text-align: center;
+}
+
+#name-instruction {
+  font-family: sans-serif;
+  margin-top: 50%;
+}
+
+#user-name {
+  margin-top: 5%;
+  width: 200px;
+  height: 30px;
+  border: none;
+  border-radius: 2px;
+}
+
+#enterButton {
+  width: 100px;
+  height: 30px;
+  border: none;
+  background-color: #f7a252;
+}
+
+.app-title {
+  width: 800px;
+  height: 50px;
+  color: #a8a7a5;
+  background-color: white;
+  font-family: sans-serif;
+  border-radius: 10px;
+  font-style: bold;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  text-align: center;
+  margin-left: 2px;
+  margin-top: 2%;
+}
+
+#main-chat {
+  top: 50%;
+  left: 50%;
+  display: none;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.chat-container {
+  width: 800px;
+  height: 400px;
+  background-color: white;
+  border-radius: 5px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  border-bottom: 1px solid gray;
+}
+
+
+#user-message {
+  width: 590px;
+  height: 40px;
+  border: none;
+  border-radius: 10px;
+  bottom: 0;
+  margin: auto;
+}
+
+#userMessage {
+  float: right;
+  font-family: sans-serif;
+  background-color: lightgreen;
+  margin-right: 100px;
+}
+
+#otherMessage {
+  float: left;
+  font-family: sans-serif;
+  background-color: lightgray;
+  margin-left: 100px;
+}
+
+#sendButton {
+  width: 200px;
+  height: 40px;
+  border: none;
+  border-radius: 100px;
+  color: white;
+  background-color: #9bd428;
+  margin-bottom: 10%;
+}
+
+#messages {
+  font-family: sans-serif;
+  position: sticky;
+  margin-top: 3%;
+}
+
+#alert {
+  font-style: italic;
+  color: #cfcfcf;
+  font-size: 20px;
+  position: absolute;
+  margin-top: 350px;
+  left: 16px;
+}

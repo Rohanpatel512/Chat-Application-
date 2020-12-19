@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="style.css" type='text/css' rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.dev.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body onload="broadcastMessage()">
+
+
+
+	<div class="name-container" id="nameBox">
+      <form id="name-form" type="form">
+        <label id="name-instruction">Please enter your name</label>
+        <input type="text" placeholder="Your Name" name="name" id="user-name"></input></br>
+        <button type="button" id="enterButton" onclick="displayChat()">Enter</button>
+      </form>
+  </div>
+
+    <div id="main-chat">
+      <h2 class="app-title">Chat</h2>
+
+        <div class="chat-container" id="chat-box">
+          <p id="userMessage"></p>
+          <p id="otherMessage"></p>
+
+          <p id="alert"></p>
+        </div>
+
+        <input type="text" oninput="userTyping()" placeholder="Type your message here..." id="user-message"></input>
+      <button type="button" id="sendButton" onclick="sendMessage()">Send</button>
+    </div>
+
+  </body>
+</html>
