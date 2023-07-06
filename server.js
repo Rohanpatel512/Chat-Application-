@@ -2,7 +2,7 @@
 const express = require('express');
 const socket = require('socket.io');
 
-// Store the express function in variable
+// Create the server with express
 const app = express();
 
 // Make the server listen to port 3001
